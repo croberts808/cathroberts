@@ -40,7 +40,7 @@ h4 {
     font-family: 'Montserrat';
     font-size: 27px;
     font-weight: 500;
-    color:black;
+    color: #4c515b;
     margin-top: 5px;
     margin-left: 15px;
 }
@@ -51,14 +51,10 @@ h5 {
     font-size: 25px;
     letter-spacing: 1px;
 }
+ 
 
-h6 {
-    color: #4c515b;
-    font-family: "Montserrat";
-    font-size: 25px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
+
+
 
 
 /* Nav bars*/
@@ -150,7 +146,7 @@ a {
     position: relative;
     background-color: #fffefc;
     height: auto;
-    width: 375px;
+    width: 415px;
     margin: 40px;
     border: solid;
     border-color: black;
@@ -166,8 +162,8 @@ a {
 
 /* images*/
 .postImage {
-    width: 375px;
-    height: 375px;
+    width: 415px;
+    height: 415px;
 }
 
 .aboutmePic {
@@ -178,7 +174,41 @@ a {
 
 /*projects page*/
 
+.gradientOutline {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    background: linear-gradient(135deg, rgba(192,233,239,1) 0%, rgba(200,199,247,1) 50%, rgba(208,164,255,1) 100%);
+}
 
+.insideOutline {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 97%;
+    height: 100%;
+    margin: auto;
+    background-color: #fffefc;
+}
+
+.productImagebox {
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.productImage {
+    width:325px;
+    height: 325px;
+    margin-bottom:15px;
+    border: solid black 2px;
+}
 /*about me page */
 
 .aboutIntro {
@@ -197,6 +227,7 @@ a {
     background-color: #fffefc;
     margin: auto;
     margin-top: 15px;
+    margin-bottom: 15px;
     margin-right: 3%;
     border-radius: 2.5%;
     border: solid #c8c7fb 7px;
