@@ -10,6 +10,20 @@ body {
     overflow-x: hidden;
 }
 
+/* Buttons */
+
+.readMore {
+    width: 125px;
+    height: 65px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 15px;
+    background-color: #006FF9;
+    align-self: center;
+    border-radius: 20px;
+    border: hidden;
+}
+
 /* Fonts and sizes */
 h1 {
     color: #4c515b;

@@ -4,8 +4,10 @@
         <h2>My projects. </h2>
         <ul style = "margin-left: -20px; line-height: 300%;">
             <li>
-                <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
-                    Akari: A JavaFX application.</h3>
+                <a href= "#post1!">
+                    <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
+                        Akari: A JavaFX application.</h3>
+                </a>
             </li>
             <li>
                 <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
@@ -20,7 +22,7 @@
     </div>
 </div>
 
-<div class = "projects">
+<div id= "post1" class = "projects" >
     <div class = "insideOutline">
         <h2 style = "align-self: center; margin-bottom: 10px">Akari</h2>
         <div class = "productImagebox">
@@ -28,16 +30,17 @@
             <img class = "productImage" src = "/assets/akari_mistake.png" alt = "Puzzle with controls">
             <img class = "productImage" src = "/assets/akari_solved.png" alt = "Puzzle with controls">
         </div>
-        <h3 style = "width: 875px;margin:auto;margin-bottom: 3%">
+        <h3 style = "width: 875px;margin:auto; margin-bottom: -15px">
             <p class = "subhead">
                 During the spring 2022 semester, I created a JavaFX application for my “Foundations of Programming” course. 
                 We spent the semester creating programs in Java, and our final assignment was to learn how to use 
-                JavaFX and Maven to replicate the game Akari. <br> <br>
-
-                It was my first time using the Model View Controller design pattern, and I ended up having a lot of fun 
-                creating the visuals and putting it all together
+                JavaFX and Maven to replicate the game Akari. 
+                <span id="dots">. . .</span>
+                <br> <br>
+                <span id="more">It was my first time using the Model View Controller design pattern, and I 
+                    ended up having a lot of fun creating the visuals and putting it all together</span>
             </p>
         </h3>
-        <button onclick="readMore()">Read more</button>
+        <button (click)="readMore()" id="myBtn" class = "readMore">Read more</button>
     </div>
 </div>
