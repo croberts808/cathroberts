@@ -4,14 +4,14 @@
         <h2>My projects. </h2>
         <ul style = "margin-left: -20px; line-height: 300%;">
             <li>
-                <a (click) = "onClick('post1')">
+                <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
+                    Flower Shop: A Figma wireframe and prototype.</h3>
+            </li>
+            <li>
+                <a (click) = "onClick('post2')">
                     <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
                         Akari: A JavaFX application.</h3>
                 </a>
-            </li>
-            <li>
-                <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
-                    Flower Shop: A Figma wireframe and prototype.</h3>
             </li>
             <li>
                 <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
@@ -27,6 +27,58 @@
 </div>
 
 <div id= "post1" class = "projects" >
+    <div class = "insideOutline">
+        <h2 style = "align-self: center; margin-bottom: 10px">Flower Shop</h2>
+        <div class = "productImagebox">
+            <img class = "productImage" src = "/assets/alicia_wren.png" alt = "Puzzle with controls">
+            <img class = "productImage" src = "/assets/paper_wireframe.jpg" alt = "Paper wireframe of checkout page">
+        </div>
+        <h3 style = "width: 875px;margin:auto; margin-top: -10px;margin-bottom: 20px">
+            <p class = "subhead">
+                Last December, I started a <a style = "color: #4c515b; text-decoration: underline;"href = "https://www.coursera.org/professional-certificates/google-ux-design">
+                Google course through Coursera</a> to learn more about UX 	
+                Design and grow my skills as a designer and researcher.
+                <span id="dots">. . .</span>
+                <br> <br>
+                <span id="more">There are 7 courses total, and I am currently working my way through the 4th, 
+                    “Conduct UX Research and Test Early Concepts.” In the first 3 courses, I learned all about 
+                    user personas, user pain points, wireframing, prototyping, empathy, accessibility, and how 
+                    to create user journeys and competitive audits. 
+                    <br><br>
+                    In order to work through these courses, it was necessary to come up with an idea for a mobile 
+                    or web application to put my newfound knowledge to work. I decided to create a floral delivery 
+                    app that solves user pain points and is simple to use. Through the class, I learned how to use 
+                    Figma to first create wireframes for the app, and then turn those wireframes into a prototype. 
+                    See below for a walkthrough of my little app!
+                    
+                    <iframe style="margin-top: 20px;margin-bottom:30px;width: 100%; height: 450px;border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fmi9VDXLakIN9xhQMfVmyJb%2FFlower-Shop-Wireframes%3Fnode-id%3D19%253A42%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D19%253A2%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+                    
+                    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+                    <i style = "margin-right: 4px; " class="em em-pencil2" aria-role="presentation" aria-label="PENCIL"></i>
+                    
+                    <span style = "text-decoration: underline; font-weight: 700;">What I Learned:</span>
+                    
+                    <ul>
+                        <li>How to create digital wireframes from paper</li>
+                        <li>How to use the Figma components tool</li>
+                        <li>How to use Figma Variants to create interactive components</li>
+                    </ul>
+                    <i style = "margin-right: 4px; " class="em em-purple_heart" aria-role="presentation" aria-label="PURPLE HEART"></i>
+                    <span style = "text-decoration: underline; font-weight: 700;">My Favorite Parts of the Entire Process:</span>
+                    <ul>
+                        <li>Creating User Personas (see 'Alicia Wren' above)</li>
+                        <li>Creating a User Journey Map to anticipate potential needs for the app</li>
+                        <li>Learning how to navigate and use Figma</li>
+                    </ul>
+                </span>
+            </p>
+        </h3>
+        
+        <button (click)="readMore()" id="myBtn" class = "readMore">Read more</button>
+    </div>
+</div>
+
+<div id= "post2" class = "projects" >
     <div class = "insideOutline">
         <h2 style = "align-self: center; margin-bottom: 10px">Akari</h2>
         <div class = "productImagebox">
@@ -45,6 +97,8 @@
                     ended up having a lot of fun creating the visuals and putting it all together</span>
             </p>
         </h3>
+        
         <button (click)="readMore()" id="myBtn" class = "readMore">Read more</button>
     </div>
 </div>
+

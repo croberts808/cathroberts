@@ -25,6 +25,7 @@ body {
 .readMore {
     width: 125px;
     height: 65px;
+    margin: auto;
     margin-bottom: 15px;
     color: white;
     font-size: 15px;
@@ -215,7 +216,7 @@ a {
 }
 
 .productImage {
-    width:275px;
+    width:auto;
     height: 275px;
     margin: 10px;
     margin-bottom: 20px;
