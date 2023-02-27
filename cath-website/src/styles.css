@@ -10,6 +10,18 @@ body {
     overflow-x: hidden;
 }
 
+.dark-mode {
+    background-color: #4c515b;
+    color: white
+}
+
+#more {display: none;}
+
+/* Colors */
+:root {
+    --lightText: #ffffff;
+    --darkText: #4c515b;
+}
 /* Buttons */
 
 .readMore {
@@ -26,7 +38,7 @@ body {
 
 /* Fonts and sizes */
 h1 {
-    color: #4c515b;
+    color: var(--darkText);
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 16px;
@@ -74,7 +86,7 @@ h5 {
 /* Nav bars*/
 
 .topnav {
-    background-color: #fffefc;
+    /*background-color: #fffefc;*/
     height: 60px;
     width: 100%;
     overflow:hidden;
@@ -115,14 +127,7 @@ a {
 
 
 /* Webpage sections */
-.fakespacing {
-    height: 1200px;
-    width: 100%;
-    display: flex;
-}
-
 .intro {
-    background: #fffefc;
     height: 220px;
     display: flex;
     justify-content: left;

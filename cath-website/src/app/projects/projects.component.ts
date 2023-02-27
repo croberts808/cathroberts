@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
@@ -7,13 +8,18 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   
+  constructor(private viewportScroller: ViewportScroller) {}
+
+  public onClick(elementId: string): void { 
+      this.viewportScroller.scrollToAnchor(elementId);
+  }
+
   readMore(): void {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
 
     if (dots !== null && btnText !== null && moreText !== null) {
-      console.log("No null values")
       if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more"; 
