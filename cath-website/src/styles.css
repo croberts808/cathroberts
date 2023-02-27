@@ -3,6 +3,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: #fffefc;
+    color: #4c515c;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -18,10 +19,7 @@ body {
 #more {display: none;}
 
 /* Colors */
-:root {
-    --lightText: #ffffff;
-    --darkText: #4c515b;
-}
+
 /* Buttons */
 
 .readMore {
@@ -38,25 +36,26 @@ body {
 
 /* Fonts and sizes */
 h1 {
-    color: var(--darkText);
     font-family: 'Montserrat';
-    font-weight: 400;
+    color:#4c515b;
+    font-weight: 600;
     font-size: 16px;
     padding: 15px;
     letter-spacing: 1px; 
     line-height: 25px;
 }
 
-h2 {
-    color: #4c515b;
+h2 { 
     font-family: Georgia;
+    color:#4c515b;
     font-size: 45px;
     letter-spacing: 1px;
 }
 
 h3 {
-    color: #4c515b;
+    
     font-family: 'Montserrat';
+    color:#4c515b; 
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -64,16 +63,16 @@ h3 {
 
 h4 {
     font-family: 'Montserrat';
+    color:#4c515b;
     font-size: 27px;
     font-weight: 500;
-    color: #4c515b;
     margin-top: 5px;
     margin-left: 15px;
 }
 
 h5 {
-    color: #4c515b;
     font-family: Georgia;
+    color:#4c515b;
     font-size: 25px;
     letter-spacing: 1px;
 }
@@ -162,9 +161,9 @@ a {
 
 .post {
     display: flex;
+    background-color: #fffefc;
     flex-direction: column;
     position: relative;
-    background-color: #fffefc;
     height: auto;
     width: 415px;
     margin: 40px;
@@ -225,7 +224,16 @@ a {
 }
 /*about me page */
 
+.linkedinLogo {
+    position: absolute;
+    z-index: 2;
+    color:#7674d1;
+    top: 100px ;
+    right: 70px;
+}
+
 .aboutIntro {
+    z-index: 1;
     background: #fffefc;
     height: 280px;
     display: flex;
