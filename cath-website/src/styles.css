@@ -51,10 +51,10 @@ h5 {
     font-size: 25px;
     letter-spacing: 1px;
 }
- 
 
-
-
+.subhead::first-letter {
+    initial-letter: 2;
+}
 
 
 /* Nav bars*/
@@ -137,6 +137,7 @@ a {
     display: flex;
     justify-content: center;
     width: 90%;
+    margin:auto;
     border-radius: 2.5%;
 }
 
@@ -174,40 +175,34 @@ a {
 
 /*projects page*/
 
-.gradientOutline {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    margin-top: 40px;
-    background: linear-gradient(135deg, rgba(192,233,239,1) 0%, rgba(200,199,247,1) 50%, rgba(208,164,255,1) 100%);
-}
-
 .insideOutline {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    width: 97%;
-    height: 100%;
-    margin: auto;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    margin: 2.5%;
+    border-radius:2.5%;
     background-color: #fffefc;
 }
 
 .productImagebox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width:auto;
+    justify-content: center;
     height: 100%;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .productImage {
-    width:325px;
-    height: 325px;
-    margin-bottom:15px;
+    width:275px;
+    height: 275px;
+    margin: 10px;
+    margin-bottom: 20px;
     border: solid black 2px;
+    filter: drop-shadow(5px 5px 5px rgb(105, 105, 105))
 }
 /*about me page */
 
