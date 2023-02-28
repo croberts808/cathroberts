@@ -151,13 +151,21 @@ a {
 /* Project Posts */
 .projects {
     flex-wrap: wrap;
-    background: rgb(192,233,239);
-    background: linear-gradient(135deg, rgba(192,233,239,1) 0%, rgba(200,199,247,1) 50%, rgba(208,164,255,1) 100%);
     display: flex;
     justify-content: center;
     width: 90%;
     margin:auto;
     border-radius: 2.5%;
+}
+
+.projectOutline {
+    display: flex;
+    background: linear-gradient(135deg, rgba(192,233,239,1) 0%, rgba(200,199,247,1) 50%, rgba(208,164,255,1) 100%);
+    justify-content: center;
+    width: auto;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .post {
@@ -166,7 +174,7 @@ a {
     flex-direction: column;
     position: relative;
     height: auto;
-    width: 415px;
+    width: 250px;
     margin: 40px;
     border: solid;
     border-color: black;
@@ -182,8 +190,8 @@ a {
 
 /* images*/
 .postImage {
-    width: 415px;
-    height: 415px;
+    width: 250px;
+    height: 250px;
 }
 
 .aboutmePic {
