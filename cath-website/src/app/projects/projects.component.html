@@ -4,8 +4,10 @@
         <h2>My projects. </h2>
         <ul style = "margin-left: -20px; line-height: 300%;">
             <li>
-                <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
-                    Flower Shop: A Figma wireframe and prototype.</h3>
+                <a (click) = "onClick('post1')">
+                    <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
+                        Flower Shop: A Figma wireframe and prototype.</h3>
+                </a>
             </li>
             <li>
                 <a (click) = "onClick('post2')">
@@ -26,9 +28,9 @@
     </div>
 </div>
 
-<div id= "post1" class = "projects" >
+<div  class = "projects" >
     <div class = "insideOutline">
-        <h2 style = "align-self: center; margin-bottom: 10px">Flower Shop</h2>
+        <h2 id= "post1" style = "align-self: center; margin-bottom: 10px">Flower Shop</h2>
         <div class = "productImagebox">
             <img class = "productImage" src = "/assets/alicia_wren.png" alt = "Puzzle with controls">
             <img class = "productImage" src = "/assets/paper_wireframe.jpg" alt = "Paper wireframe of checkout page">
@@ -38,9 +40,9 @@
                 Last December, I started a <a style = "color: #4c515b; text-decoration: underline;"href = "https://www.coursera.org/professional-certificates/google-ux-design">
                 Google course through Coursera</a> to learn more about UX 	
                 Design and grow my skills as a designer and researcher.
-                <span id="dots">. . .</span>
+                <span id="dotsFlower">. . .</span>
                 <br> <br>
-                <span id="more">There are 7 courses total, and I am currently working my way through the 4th, 
+                <span id = "moreFlower">There are 7 courses total, and I am currently working my way through the 4th, 
                     “Conduct UX Research and Test Early Concepts.” In the first 3 courses, I learned all about 
                     user personas, user pain points, wireframing, prototyping, empathy, accessibility, and how 
                     to create user journeys and competitive audits. 
@@ -74,13 +76,13 @@
             </p>
         </h3>
         
-        <button (click)="readMore()" id="myBtn" class = "readMore">Read more</button>
+        <button (click)="readMoreFlower()" id="myBtnFlower" class = "readMore">Read more</button>
     </div>
 </div>
 
-<div id= "post2" class = "projects" >
+<div class = "projects" >
     <div class = "insideOutline">
-        <h2 style = "align-self: center; margin-bottom: 10px">Akari</h2>
+        <h2 id= "post2"  style = "align-self: center; margin-bottom: 10px">Akari</h2>
         <div class = "productImagebox">
             <img class = "productImage" src = "/assets/akari_light.png" alt = "Puzzle with controls">
             <img class = "productImage" src = "/assets/akari_mistake.png" alt = "Puzzle with controls">
@@ -95,11 +97,24 @@
                 <span id="dots">. . .</span>
                 <br> <br>
                 <span id="more">It was my first time using the Model View Controller design pattern, and I 
-                    ended up having a lot of fun creating the visuals and putting it all together</span>
+                    ended up having a lot of fun creating the visuals and putting it all together. 
+                    I also learned a lot about creating buttons, notifying observers, and using a build manager.
+                    <br><br>
+                    <i style = "margin-right: 4px; " class="em em-purple_heart" aria-role="presentation" aria-label="PURPLE HEART"></i>
+                    <span style = "text-decoration: underline; font-weight: 700;">My Favorite Parts:</span>
+                    <ul>
+                        <li>The trial and error of setting up a gridpane</li>
+                        <li>Watching the model implementation work its magic</li>
+                        <li>Showing the final product to my young nephew and allowing him to change the component colors with code
+
+                        </li>
+                    </ul>
+                    
+                </span>
             </p>
         </h3>
         
-        <button (click)="readMore()" id="myBtn" class = "readMore">Read more</button>
+        <button (click)="readMoreAkari()" id="myBtn" class = "readMore">Read more</button>
     </div>
 </div>
 

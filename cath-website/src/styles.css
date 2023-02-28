@@ -17,7 +17,7 @@ body {
 }
 
 #more {display: none;}
-
+#moreFlower {display: none}
 /* Colors */
 
 /* Buttons */
@@ -269,4 +269,14 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     width: 650px;
+}
+
+.parallax {
+    background-image:  url("/assets/hack110.png"), url("/assets/catherine_roberts.jpg");
+    height: 700px;
+    width:auto;
+    background-position: top left, bottom right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

@@ -14,10 +14,28 @@ export class ProjectsComponent {
       this.viewportScroller.scrollToAnchor(elementId);
   }
 
-  readMore(): void {
+  readMoreAkari(): void {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
+
+    if (dots !== null && btnText !== null && moreText !== null) {
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+  }
+
+  readMoreFlower(): void {
+    var dots = document.getElementById("dotsFlower");
+    var moreText = document.getElementById("moreFlower");
+    var btnText = document.getElementById("myBtnFlower");
 
     if (dots !== null && btnText !== null && moreText !== null) {
       if (dots.style.display === "none") {
