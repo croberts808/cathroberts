@@ -251,10 +251,11 @@ a {
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    border: solid black 3px;
+    margin: auto;
 }
 
 .aboutQuestionBox {
-    z-index: 0;
     display: flex;
     flex-direction: column;
     width: 700px;
