@@ -246,20 +246,18 @@ a {
     background: #fffefc;
     height: 280px;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
-    margin-left: 10%;
 }
 
 .aboutQuestionBox {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 100%;
     background-color: #fffefc;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 3%;
+    align-self: center;
     border-radius: 2.5%;
     border: solid #c8c7fb 7px;
 }
@@ -272,11 +270,11 @@ a {
 }
 
 .parallax {
-    background-image:  url("/assets/hack110.png"), url("/assets/catherine_roberts.jpg");
-    height: 700px;
-    width:auto;
-    background-position: top left, bottom right;
+    background-image:  url("/assets/hack110_thin_image.png"), url("/assets/cath_thin_image.jpg");
+    z-index: 0;
+    height: 500px;
+    background-position: left, right;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;  
 }
