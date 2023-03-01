@@ -49,4 +49,22 @@ export class ProjectsComponent {
       }
     }
   }
+
+  readMoreCheckin(): void {
+    var dots = document.getElementById("dotsCheckin");
+    var moreText = document.getElementById("moreCheckin");
+    var btnText = document.getElementById("myBtnCheckin");
+
+    if (dots !== null && btnText !== null && moreText !== null) {
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+  }
 }

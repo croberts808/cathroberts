@@ -18,6 +18,7 @@ body {
 
 #more {display: none;}
 #moreFlower {display: none}
+#moreCheckin {display: none}
 /* Colors */
 
 /* Buttons */
@@ -166,6 +167,7 @@ a {
     height: 500px;
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 20px;
 }
 
 .post {

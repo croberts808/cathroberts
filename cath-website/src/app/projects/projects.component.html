@@ -20,8 +20,10 @@
                     This website: An Angular application.</h3>
             </li>
             <li>
-                <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
-                    Checkin Website: An Angular application.</h3>
+                <a (click) = "onClick('post3')">
+                    <h3 style = "margin-top: -25px; font-size: 20px; text-decoration: underline;">
+                        Checkin Website: An Angular application.</h3>
+                </a>
             </li>
         </ul>
         
@@ -82,6 +84,55 @@
 
 <div class = "projects" >
     <div class = "insideOutline">
+        <h2 id= "post3"  style = "align-self: center; margin-bottom: 10px">XL Check In System</h2>
+        <div class = "productImagebox">
+            <img class = "productImage" src = "/assets/backend_register.png" alt = "Puzzle with controls">
+        
+        </div>
+        <h3 style = "width: 875px;margin:auto; margin-bottom: -15px">
+            <p class = "subhead">
+                This semester in my “Introduction to Software Engineering” course, we are practicing pair 
+                programming, learning Typescript, creating Angular projects, and discussing current events 
+                in the tech world.
+                <span id="dotsCheckin">. . .</span>
+                <br> <br>
+                <span id="moreCheckin">Although it is not my main goal to pursue a career in Software Engineering, 
+                    I believe this course has been invaluable in teaching me how to work in teams and practice 
+                    creating and deploying applications to the web without much assistance. Our most recent project 
+                    has been to create a check in system for <a style = "color: #4c515b; text-decoration: underline;"
+                    href = "https://csxl.unc.edu/">UNC's Computer Science Experience Lab</a>.
+                    <br><br>
+                    The first rendition of this project required us to follow Angular tutorials to create the 
+                    frontend of the website and deploy it to GitHub Pages. You can find the project at <a style = "color: #4c515b; text-decoration: underline;"
+                    href = "https://comp423-23s.github.io/ex01-checkin-team_24/">this link</a>.
+                    I enjoyed learning about CSS and HTML for the first time, and spent additional time on the 
+                    assignment researching how to change colors, add elements, create flex boxes, and create button 
+                    events. 
+                    <br><br>
+                    The second rendition of this project involved creating a backend to keep track of the form data 
+                    entered in the frontend. We learned how to use the Observable class, HTTP methods, and FastAPI 
+                    to complete this task. I decided to change the styling of this rendition to get extra practice 
+                    with CSS, and also because I wanted to make it look nicer!
+                    <br><br>
+                    <i style = "margin-right: 4px; " class="em em-purple_heart" aria-role="presentation" aria-label="PURPLE HEART"></i>
+                    <span style = "text-decoration: underline; font-weight: 700;">My Favorite Parts:</span>
+                    <ul>
+                        <li>Working together with a partner</li>
+                        <li>Choosing a color scheme that fit with the XL website</li>
+                        <li>Using HTTP methods to retrieve data from the backend</li>
+                    </ul>
+                    
+                </span>
+            </p>
+        </h3>
+        
+        <button (click)="readMoreCheckin()" id="myBtnCheckin" class = "readMore">Read more</button>
+    </div>
+</div>
+
+
+<div class = "projects" >
+    <div class = "insideOutline">
         <h2 id= "post2"  style = "align-self: center; margin-bottom: 10px">Akari</h2>
         <div class = "productImagebox">
             <img class = "productImage" src = "/assets/akari_light.png" alt = "Puzzle with controls">
@@ -117,4 +168,5 @@
         <button (click)="readMoreAkari()" id="myBtn" class = "readMore">Read more</button>
     </div>
 </div>
+
 
