@@ -252,11 +252,11 @@ a {
 }
 
 .aboutQuestionBox {
+    z-index: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 700px;
     background-color: #fffefc;
-    margin: auto;
     align-self: center;
     border-radius: 2.5%;
     border: solid #c8c7fb 7px;
@@ -269,12 +269,21 @@ a {
     width: 650px;
 }
 
-.parallax {
-    background-image:  url("/assets/hack110_thin_image.png"), url("/assets/cath_thin_image.jpg");
-    z-index: 0;
+.parallax1 {
+    background-image: url("/assets/catherine_picture.jpg");
     height: 500px;
-    background-position: left, right;
+    background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;  
+}
+
+.parallax2 {
+    background-image: url("/assets/hack110.png");
+    height: 500px;
+    background-position:bottom  right  ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    z-index: 1;
 }
