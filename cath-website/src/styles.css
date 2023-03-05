@@ -51,7 +51,7 @@ h1 {
 h2 { 
     font-family: 'Montserrat';
     color:#4c515b;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 1px;
     font-weight: 400;
 }
@@ -152,9 +152,10 @@ h5 {
     background-color: white;
     width: 500px;
     height: 200px;
-    top: 90px;
+    top: 120px;
     left: 150px;
     box-shadow: 15px 20px 5px #5c7aa1;
+    border-radius: 15px;
 }
 
 .resumebuttonspace {
@@ -164,7 +165,7 @@ h5 {
 }
 
 .resumebutton {
-    background-color: #538d79;
+    background-color: #D98481;
     border:hidden;
     margin-left: 30px;
     width: 150px;
@@ -173,7 +174,19 @@ h5 {
     text-align: center;
 }
 
-
+.circle {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    top: 240px;
+    right: 240px;
+    background: radial-gradient(circle at 100px 100px, #fff36d, #fda21a);
+    box-shadow: 0px 30px 20px #767a81;
+  }
 
 /* Routes*/
 
@@ -185,7 +198,6 @@ a {
     font-size: 100px;
 }
 
-
 /* Webpage sections */
 .intro {
     height: 220px;
@@ -193,7 +205,8 @@ a {
     justify-content: left;
     padding: 0;
     margin-left: 10%;
-    margin-bottom: -40px;
+    margin-bottom: -50px;
+    margin-top: 30px;
 }
 
 .introText{
