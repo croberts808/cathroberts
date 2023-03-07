@@ -186,7 +186,16 @@ h5 {
     right: 240px;
     background: radial-gradient(circle at 100px 100px, #fff36d, #fda21a);
     box-shadow: 0px 30px 20px #767a81;
-  }
+}
+
+.mockup {
+    width: 220px;
+    height: auto;
+    z-index: 3;
+    position: absolute;
+    top: -50px;
+    right: 150px;
+}
 
 /* Routes*/
 
