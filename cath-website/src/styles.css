@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=GolosText');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed');
 /* You can add global styles to this file, and also import other style files */
+/* background-color: #fffefc; */
+
 body {
     background-color: #fffefc;
     color: #4c515c;
@@ -38,29 +42,27 @@ body {
 
 /* Fonts and sizes */
 h1 {
-    font-family: 'Montserrat';
+    font-family: 'Asap Condensed';
     color:#4c515b;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 15px;
-    letter-spacing: 1px; 
-    line-height: 25px;
+    font-weight: 200;
+    font-size: 57px;
+    letter-spacing: 2px;
 }
 
-h2 { 
-    font-family: Georgia;
-    color:#4c515b;
-    font-size: 45px;
-    letter-spacing: 1px;
-}
-
-h3 {
-    
-    font-family: 'Montserrat';
+h2 {
+    font-family: 'Asap Condensed';
     color:#4c515b; 
-    font-weight: 400;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+h3 { 
+    font-family: 'Asap Condensed';
+    color:#4c515b;
     font-size: 16px;
-    line-height: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
 h4 {
@@ -128,25 +130,47 @@ a {
 
 
 /* Webpage sections */
+
+/* home */
+
+.toppage {
+    height: 350px;
+    width: 100%;
+    /*background-color: #e5c2c1;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 100px;
+    /* box-shadow: 0px 3px 15px #8d8b8a;*/
+}
+
 .intro {
-    height: 220px;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: left;
-    padding: 0;
-    margin-left: 10%;
-    margin-bottom: -40px;
 }
 
 .introText{
     width: 100%;
+    margin-left: 8%;
 }
 
-.cutout {
-    width: auto;
-    height: 140%;
-    margin-right: 5%;
-    align-self: center;
-    margin-bottom: 15px;
+.wavebottom {
+    height: 300px;
+    width: 100%;
+    background-color: #fcf2f1;
+    margin-top: -5px;
+    position: relative;
+}
+
+.phonemockup {
+    width: 250px;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    top: -220px;
+    right: 100px;
 }
 
 /* Project Posts */
