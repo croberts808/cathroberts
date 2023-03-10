@@ -1,57 +1,76 @@
 
-<div class="intro">
-    <div class = "introText">
-        <h2>Hi! I'm Cath. </h2>
-        <h5 style = "margin-top: -25px">Welcome to my design portfolio.</h5>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="toppage">
+    <img style="height: 90%; width: auto;margin: auto;margin-left: 7%; border: solid 3px white" 
+    src="/assets/catherine_picture.jpg">
+    <div class="intro">
+        <div class="introText">
+            <h1>Hi! I'm Cath</h1>
+            <div class="post">
+                <h2 style="margin-top: -17px;">Student/UX Designer</h2>
+                <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+                <i style="margin-left: 10px; margin-top: -3px" class="em em-sparkles" aria-role="presentation" aria-label="SPARKLES"></i>
+            </div>
+            <a (click) = "onClick('aboutme')">
+                <h3 style="text-decoration: underline;">Learn about me</h3>
+            </a>
+        </div>      
     </div>
-    
 </div>
 
-<div style = "margin: auto" class = "projects">
-    <a routerLink = "/projects/">
-        <div class = "projectOutline">
-            <div class = "post">
-                <img class = "postImage" src = "/assets/Akari.png" alt = "Puzzle with controls">
-                <hr style = "margin-top: -2px;margin-left: 0.1px; margin-right: 0.1px; border-top: 1.5px solid black; ">
-                <div style = "margin-bottom: -15px;" class = "postDescription">
-                    <h4>Akari</h4>
-                    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-                    <i style = "margin-left: 10px; margin-top: 9px;" class="em em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i>
-                </div>
-                <h1 style = "margin-top: -20px;">A simple light-up game created with JavaFX</h1> 
-                </div>
+<h2 style="text-align: center; color: black; margin-bottom: 50px; font-size: 30px; font-weight: 400;"> 
+    Find Links to my Projects:</h2>
+
+<div class="projects">
+    <a routerLink = "/projects">
+        <div class="post">
+            <img class="postImage" src="/assets/figmaWireframe.png">
+            <div class="postDescription">
+                <h2 style="margin-top: 0px;color: black;font-weight: 400; font-size: 23px;">Flower Shop</h2>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Simple wireframe 
+                    and prototype created with Figma</h3>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Feb. 2023</h3>
+            </div>
         </div>
     </a>
-
     <a routerLink = "/projects">
-        <div class = "projectOutline">
-            <div class = "post">
-                <img class = "postImage" src = "/assets/figmaWireframe.png" alt = "Wireframe built in Figma">
-                <hr style = "margin-top: -2px;margin-left: 0.1px; margin-right: 0.1px; border-top: 1.5px solid black; ">
-                <div style = "margin-bottom: -15px;" class = "postDescription">
-                    <h4>Flower Shop</h4>
-                    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-                    <i style = "margin-left: 10px; margin-top: 9px;" class="em em-white_flower" aria-role="presentation" aria-label="WHITE FLOWER"></i>
-                </div>
-                <h1 style = "margin-top: -20px;">Wireframe and Prototype for fake app built in Figma.</h1> 
-                </div>
-        </div>  
+        <div class="post">
+            <img class="postImage" src="/assets/checkin_button.png">
+            <div class="postDescription">
+                <h2 style="margin-top: 0px;color: black;font-weight: 400; font-size: 23px;">Check-in Website</h2>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Course project using Angular, Node.js</h3>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Feb. 2023</h3>
+            </div>
+        </div>
     </a>
-
     <a routerLink = "/projects">
-        <div class = "projectOutline">
-            <div class = "post">
-                <img class = "postImage" src = "/assets/checkin_button.png" alt = "Wireframe built in Figma">
-                <hr style = "margin-top: -2px;margin-left: 0.1px; margin-right: 0.1px; border-top: 1.5px solid black; ">
-                <div style = "margin-bottom: -15px;" class = "postDescription">
-                    <h4>XL Check in</h4>
-                    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-                    <i style = "margin-left: 10px; margin-top: 9px;" class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
-                </div>
-                <h1 style = "margin-top: -20px;">Angular Website hosted on GitHub pages.</h1> 
-                </div>
-        </div>  
+        <div class="post" style="margin-top:50px;">
+            <img class="postImage" src="/assets/akari_mistake.png">
+            <div class="postDescription">
+                <h2 style="margin-top: 0px;color: black;font-weight: 400; font-size: 23px;">Akari</h2>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Light up game created with JavaFX</h3>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Apr. 2022</h3>
+            </div>
+        </div> 
     </a>
+    <a routerLink = "/projects">
+        <div class="post" style="margin-top:50px;">
+            <img class="postImage" src="/assets/akari_mistake.png">
+            <div class="postDescription">
+                <h2 style="margin-top: 0px;color: black;font-weight: 400; font-size: 23px;">My Website</h2>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Personal Project created with Angular, HTML, CSS</h3>
+                <h3 style="margin-top: 0px; font-family: 'Roboto'; font-weight:400">Mar. 2023</h3>
+            </div>
+        </div>
+    </a>   
+</div>
 
+<svg id="aboutme" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#efeeee" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,90.7C384,96,480,96,576,112C672,128,768,160,864,170.7C960,181,1056,171,1152,149.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+<div class="wavebottom">
+    <div class="aboutmetext">
+        <h1>About Me</h1>
+    </div>
+    <img class="phonemockup" src="/assets/flower_app_mockup.png">
 </div>
 
